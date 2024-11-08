@@ -1,8 +1,8 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
     color: #333;
     display: flex;
     justify-content: center;
@@ -13,18 +13,18 @@ body {
 
 .container {
     text-align: center;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
     width: 90%;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .title {
-    font-family: 'Great Vibes', cursive;
-    font-size: 2.5rem;
-    color: #d23669;
+    font-family: 'Parisienne', cursive;
+    font-size: 3rem;
+    color: #d81b60;
 }
 
 .intro {
@@ -33,10 +33,10 @@ body {
 }
 
 .buttons button {
-    margin: 5px;
+    margin: 10px;
     padding: 10px 20px;
     border: none;
-    background-color: #d23669;
+    background-color: #d81b60;
     color: white;
     font-size: 1rem;
     border-radius: 5px;
@@ -45,24 +45,26 @@ body {
 }
 
 .buttons button:hover {
-    background-color: #b82c5b;
+    background-color: #ad1457;
 }
 
 .messages {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .message {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     display: none;
     margin-bottom: 20px;
+    color: #555;
 }
 
 .message img.love-image {
-    width: 100px;
+    width: 120px;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .message.hidden {
@@ -73,10 +75,10 @@ body {
     position: absolute;
     width: 20px;
     height: 20px;
-    background-color: #ff6b81;
+    background-color: #ff4081;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     animation: float 5s infinite ease-in-out;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 @keyframes float {
@@ -92,7 +94,7 @@ body {
 
 @media (max-width: 600px) {
     .title {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .intro {
@@ -105,10 +107,10 @@ body {
     }
 
     .message {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .message img.love-image {
-        width: 80px;
+        width: 100px;
     }
 }
