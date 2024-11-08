@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secret Love Message</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
     <audio id="backgroundMusic" loop autoplay>
@@ -13,11 +13,13 @@
         Your browser does not support the audio element.
     </audio>
     <div class="container">
-        <h1>Hello, My Love!</h1>
-        <p>I've got something special just for you.</p>
-        <button onclick="showMessage1()">Reveal Secret</button>
-        <button onclick="showMessage2()">Another Surprise</button>
-        <button onclick="showMessage3()">One More Thing</button>
+        <h1 class="title">Hello, My Love!</h1>
+        <p class="intro">I've got something special just for you.</p>
+        <div class="buttons">
+            <button onclick="showMessage1()">Reveal Secret</button>
+            <button onclick="showMessage2()">Another Surprise</button>
+            <button onclick="showMessage3()">One More Thing</button>
+        </div>
         <div class="messages">
             <p class="message hidden" id="loveMessage1">
                 <img src="sunshine.jpg" alt="Sunshine" class="love-image">
@@ -70,3 +72,4 @@
     </script>
 </body>
 </html>
+
